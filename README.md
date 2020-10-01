@@ -1,5 +1,7 @@
 # WSNM-Server
 
+![WSNM_architecture](../media/WSNM_architecture.png?raw=true)
+
 ## Installation
 1) Install pip (pip3)
     - `sudo apt install python3-pip`
