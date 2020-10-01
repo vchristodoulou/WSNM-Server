@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<locations>
+    <location>
+        <type>Building</type>
+        <bname>Building_A</bname>
+        <floors>
+            <fname>Floor_0</fname>
+            <areas>
+                <aname>Area_1</aname>
+            </areas>
+            <fname>Floor_1</fname>
+            <areas>
+                <aname>Area_1</aname>
+                <aname>Area_2</aname>
+            </areas>
+        </floors>
+    </location>
+    <location>
+        <type>Building</type>
+        <bname>Building_B</bname>
+        <floors>
+            <fname>Floor_0</fname>
+            <areas>
+                <aname>Area_1</aname>
+                <aname>Area_2</aname>
+                <aname>Area_3</aname>
+            </areas>
+        </floors>
+    </location>
+</locations>

@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<nodetypes>
+    <nodetype>
+        <id>MTM-CM5000-SMA</id>
+        <platform>TELOSB</platform>
+        <processor>Texas Instruments MSP430F1611</processor>
+        <memory>
+            <program>48KB</program>
+            <data>10KB</data>
+            <external_flash>1MB</external_flash>
+            <EEPROM>0</EEPROM>
+        </memory>
+        <radio>
+            <rf_chip>Texas Instruments CC2420</rf_chip>
+            <standard>IEEE 802.15.4 2.4GHz</standard>
+        </radio>
+        <sensors>
+            <sensor>
+                <device>Hamamatsu S1087 Series</device>
+                <type>Ambient Light</type>
+            </sensor>
+            <sensor>
+                <device>Hamamatsu S1087 Series</device>
+                <type>Ambient Light</type>
+            </sensor>
+            <sensor>
+                <device>Sensirion SHT11</device>
+                <type>Temperature</type>
+                <type>Humidity</type>
+            </sensor>
+        </sensors>
+        <commands>
+            <flash>msp430-bsl-telosb -p PORT -e -i ihex IMAGE</flash>
+            <erase>msp430-bsl-telosb -p PORT -e</erase>
+            <reset>msp430-bsl-telosb -p PORT -r</reset>
+        </commands>
+    </nodetype>
+    <nodetype>
+        <id>UNO</id>
+        <platform>ARDUINO</platform>
+        <processor>Microchip ATmega328P</processor>
+        <memory>
+            <program>32KB</program>
+            <data>2KB</data>
+            <external_flash>0</external_flash>
+            <EEPROM>1KB</EEPROM>
+        </memory>
+        <radio>
+            <rf_chip>None</rf_chip>
+            <standard>None</standard>
+        </radio>
+        <sensors>
+        </sensors>
+        <commands>
+            <flash>arduino --upload IMAGE --port PORT</flash>
+            <erase>arduino --upload IMAGE --port PORT</erase>
+            <reset>arduino --upload IMAGE --port PORT</reset>
+        </commands>
+    </nodetype>
+</nodetypes>
